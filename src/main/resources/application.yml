@@ -1,0 +1,21 @@
+spring:
+  resources:
+    static-locations: classpath:/
+  datasource:
+    url: jdbc:mysql://123.57.78.6:3306/todo?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    host: smtp.163.com
+    username: vit125@163.com
+    password: IICGMCYCPNCPODKS
+weixin:
+  AppID: wx80e4752b9fffbde3
+  AppSecret: 5cc0784558455036dfbc24d44b24725f
